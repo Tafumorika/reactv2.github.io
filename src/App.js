@@ -26,11 +26,11 @@ class App extends Component {
                   </div>
                   <h1 className="h1s">A Post with Everything In It</h1>
                   <div className="icons">
-                      <img alt="Icons-user" src="img/icons8-user-account-filled-50.png"/> By MyThemeShop
-                          <img alt="Icons-speech" src="img/icons8-filled-bookmark-ribbon-32.png"/> featured, Mobiles
-                              <img alt="Icons-filled" src="img/icons8-speech-bubble-filled-50.png"/> 5 Comments
+                      <img alt="Icons-user" src="/img/icons8-user-account-filled-50.png"/> By MyThemeShop
+                      <img alt="Icons-speech" src="/img/icons8-filled-bookmark-ribbon-32.png"/> featured, Mobiles
+                      <img alt="Icons-filled" src="/img/icons8-speech-bubble-filled-50.png"/> 5 Comments
                   </div>
-                  <img alt="Flower and butterfly" className="img1" src="img/20160329105513-bf3f94fb.jpg"/>
+                  <img alt="Flower and butterfly" className="img1" src="/img/20160329105513-bf3f94fb.jpg"/>
                       <p className="fonts">Pellentesque habitant morbi tristeque senectus et netus et malesuada fames ac turpis egestas.
                           Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
                           Donec eu libero sit amet guam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Lorem ipsum
@@ -64,14 +64,14 @@ class App extends Component {
                       </ul>
                       <p className="ps1">Image with no alignment</p>
                       <div className="div-img2">
-                          <img className="img2" alt="Girl and phone" src="img/Optimized-Contact-me-1030x686.jpg"/>
+                          <img className="img2" alt="Girl and phone" src="/img/Optimized-Contact-me-1030x686.jpg"/>
                       </div>
                       <p className="fonts">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
                       </p>
                       <h2 className="top2">Image with left alignment</h2>
 
                       <section className="imagl">
-                          <img className="img3" alt="Girl" src="img/photo10.jpg"/>
+                          <img className="img3" alt="Girl" src="/img/photo10.jpg"/>
                               <p className="floats">Nulla sagittis convallis arcu. Sed sed nunc. Curabitur consequat. Quisgue metus enim, venenatis fermentum,
                                   mollis in, porta et, nibh. Duis vulputate elit in elit. Mauris dictum libero id justo. Fusce in est. Sed nec diam.
                                   Pellentesque habitent morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque semper nibh
@@ -96,7 +96,7 @@ class App extends Component {
                       <nav className="comments">
                           <div className="comment1">
 
-                              <img alt="avatar" src="img/Comment1.JPG" className="avatar"/>
+                              <img alt="avatar" src="/img/Comment1.JPG" className="avatar"/>
                                   <p className="name-comment"><a href="#link5" className="color-text">Coen Jacobs</a></p>
                                   <p className="text-comment">It is a long estabished fact that a reader will be distracted by the readable contebt of a page when looking at its
                                       layout.</p>
@@ -106,7 +106,7 @@ class App extends Component {
 
                           <div className="answer-comment1">
                               <hr/>
-                                  <img alt="avatar" src="img/answer-comment1.JPG" className="avatar"/>
+                                  <img alt="avatar" src="/img/answer-comment1.JPG" className="avatar"/>
                                       <p className="name-comment"><a href="#link7" className="color-text">Alex Shiels</a></p>
                                       <p className="text-comment">The generated Lorem Ipsum is therefore always free from repetition, injected humour, or
                                           non-characteristic words etc.</p>
@@ -116,7 +116,7 @@ class App extends Component {
 
                           <div className="an-answer-comment1">
                               <hr/>
-                                  <img alt="avatar" src="img/an-answer.JPG" className="avatar"/>
+                                  <img alt="avatar" src="/img/an-answer.JPG" className="avatar"/>
                                       <p className="name-comment">Lloyd Budd</p>
                                       <p className="text-comment">This book is a treatise on the theory of ethics, very popular during the Renaissance.</p>
                                       <p className="data-comment">June 27, 2012 <a href="#link9" className="color-text">Reply</a></p>
@@ -124,7 +124,7 @@ class App extends Component {
 
                           <div className="answer2-comment1">
                               <hr/>
-                                  <img alt="avatar" src="img/answer2.JPG" className="avatar"/>
+                                  <img alt="avatar" src="/img/answer2.JPG" className="avatar"/>
                                       <p className="name-comment">Joseph Scott</p>
                                       <p className="text-comment">Nulla sagittis convallis arcu. Sed sed nunc. Curabitur consequat.Quisque metus enim, venenatis fermentum,
                                           mollis in, porta et, nibh. Duis vulputate elit in elit. Mauris dictum.</p>
@@ -133,7 +133,7 @@ class App extends Component {
 
                           <div className="comment2">
                               <hr/>
-                                  <img alt="avatar" src="img/admin.JPG" className="avatar"/>
+                                  <img alt="avatar" src="/img/admin.JPG" className="avatar"/>
                                       <p className="name-comment"><a href="#link11" className="color-text">Admin</a></p>
                                       <p className="text-comment">Nulla sagittis convallis arcu. Sed sed nunc. Curabitur consequat. Quisque metus enim, venenatis fermentum,
                                           mollis in, porta et, nibh.Duis vulputate elit in elit.</p>

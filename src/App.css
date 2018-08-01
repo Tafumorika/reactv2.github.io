@@ -178,7 +178,7 @@ h1 {
 }
 .img1 {
   width: 500px;
-  height: 335px;
+  /*height: 335px;*/
 }
 
 .div-img2 {
@@ -493,7 +493,7 @@ footer div ul li a {
   color: red;
   padding: 5px;
 }
-@media screen and (max-width:820px){
+@media screen and (max-width:900px){
 
   header nav {
     width: 100%;

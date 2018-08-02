@@ -1,0 +1,35 @@
+div header {
+    display:block;
+    background-size: cover;
+    background-color: #2c4956;
+    color: white;
+    box-sizing: border-box;
+    font-size: 15px;
+
+}
+header nav {
+    margin-left: -34px;
+
+}
+header ul {
+    width: 1050px;
+    margin: 0 auto;
+
+}
+header ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: -25px;
+    margin-right: 5px;
+
+}
+header ul li:hover {
+    background: #253d48;
+}
+header ul li a {
+    display: block;
+    margin-right: 22px;
+    padding: 8px 0px 6px 20px ;
+    color: white;
+    text-decoration: none;
+}

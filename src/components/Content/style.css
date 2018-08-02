@@ -1,0 +1,139 @@
+main .fonts {
+    font-size: 14px;
+    margin: 0px;
+    line-height: 22px;
+    padding-top: 12px;
+    padding-left: 1px;
+}
+main img {
+    /*padding-top: 0px;*/
+    width: 440px;
+    max-width: 100%;
+
+}
+h1 {
+    padding-top: 8px;
+}
+
+.level1 {
+    font-size: 28px;
+    margin: 0px;
+    padding-top: 20px;
+
+}
+.level2 {
+    font-size: 26px;
+    margin: 10px 0px 0px 0px;
+    word-spacing: 4.7px;
+}
+.level3 {
+    font-size: 23px;
+    margin: 5px 0px 0px 0px;
+    word-spacing: 0.5px;
+}
+.level4 {
+    font-size: 21px;
+    margin: 5px 0px 0px 0px;
+}
+.level5 {
+    font-size: 19px;
+    margin: 3px 0px 0px 0px;
+}
+.level6 {
+    font-size: 17px;
+    margin: 7px 0px 2px 0px;
+    padding-top: 5px;
+}
+.level1, .level2, .level3, .level4, .level5, .level6 {
+    padding-left: 2px;
+}
+
+.ps {
+    font-size: 22px;
+    margin-top: 13px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    padding-bottom: 0px;
+}
+.ps1 {
+    font-size: 22px;
+    font-weight: bold;
+    word-spacing: 3px;
+    padding-top: 7px;
+    padding-bottom: 15px;
+    margin: 0px;
+}
+.img1 {
+    width: 500px;
+    /*height: 335px;*/
+}
+
+.div-img2 {
+    margin-bottom: -5px;
+}
+.img3 {
+    padding: 0px;
+}
+.tops {
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0px;
+    padding-left: 2px;
+}
+.icons {
+    font-size: 13px;
+    margin-top:-13px;
+    margin-bottom: 13px;
+
+}
+.icons img {
+    width: 15px;
+    height: 15px;
+    padding-right: 9px;
+}
+
+main section {
+    display: inline;
+}
+.squares {
+    list-style-type: square;
+    word-spacing: 2px;
+    padding-left: 28px;
+    padding-bottom: 0px;
+    line-height: 17px;
+    margin-top: 20px;
+
+}
+.squares li {
+    font-size: 13px;
+}
+
+.floats {
+    font-size: 14px;
+    padding-bottom: 103px;
+    padding-top: 3px;
+    padding-left: 455px;
+    margin: 0px;
+    word-spacing: 2px;
+    line-height: 22px;
+}
+.ols {
+    padding-top: 3px;
+    margin-bottom: 30px;
+}
+.ols li{
+    font-size: 14px;
+    margin: -3px 0px 4px -14px;
+
+}
+.top2 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.tagss {
+    font-size: 14px;
+    margin: 0px 0px 22px -3px;
+}
+.com-5 {
+    padding-bottom: 10px;
+}

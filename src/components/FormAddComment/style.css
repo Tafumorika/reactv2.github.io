@@ -1,0 +1,54 @@
+.form-div {
+    padding-right:4px;
+}
+textarea {
+    height: 140px;
+    width: 100%;
+    padding: 5px;
+    margin: 8px auto 19px auto;
+    border: 1px solid lightgray;
+    box-sizing: border-box;
+}
+form {
+    color: grey;
+    margin-top: 22px;
+}
+
+form input{
+    width: 100%;
+    height: 47px;
+    padding: 5px;
+    margin: 10px auto 20px auto;
+    border: 1px solid lightgray;
+    box-sizing: border-box;
+}
+form input:hover, textarea:hover {
+    border-color: gold;
+}
+form input[type="submit"]{
+    width: 174px;
+    height: 45px;
+    margin: 4px 0 20px 0;
+    padding: 0px 0px 4px 4px;
+    color: white;
+    background-color: #ff0b1f;
+    border: none;
+    font-size: 16px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.submit-red:hover {
+    color: lightgray;
+    background-color: crimson;
+}
+.submit-red:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+.submit-red:active {
+    background: darkred;
+}
+form label {
+    font-size: 14px;
+    top: 15px;
+}

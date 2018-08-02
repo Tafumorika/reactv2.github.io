@@ -4,6 +4,7 @@ import './style.css';
 const FormAddComment = () => {
     return(
         <div className="form-div">
+            <h3>Add a Comment</h3>
             <form method="post">
                 <label htmlFor="comment">Comment:</label>
                 <textarea id="comment" name="comment" required/>

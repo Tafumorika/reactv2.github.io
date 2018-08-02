@@ -2,11 +2,11 @@ import React from 'react';
 import './style.css';
 
 
-const Main = () => {
+const Main = (props) => {
     return (
         <div className="main-div">
             <main>
-
+                {props.children}
             </main>
         </div>
     )

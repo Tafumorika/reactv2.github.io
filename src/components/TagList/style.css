@@ -1,0 +1,19 @@
+
+.tags{
+    float: left;
+    padding-top: 13px;
+}
+
+.ul-tag {
+    display: block;
+    width: 330px;
+    padding: 26px 10px 15px 10px;
+    margin-right: 20px;
+    margin-top: 0px;
+}
+
+.h3-tag  {
+    margin: 0px 0px 0px 10px;
+    padding-top: 10px;
+
+}

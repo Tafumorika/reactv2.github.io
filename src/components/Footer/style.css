@@ -42,38 +42,38 @@ footer .recent li{
     margin-left: -15px;
 
 }
-.tagsH {
-
-    margin: 0px;
-}
-.tags{
-    float: left;
-    padding-top: 13px;
-}
-footer   ul.tags4 {
-    display: block;
-    width: 330px;
-    padding: 26px 10px 15px 10px;
-    margin-right: 20px;
-    margin-top: 0px;
-}
-.tags li {
-    list-style-type: none;
-    display: inline-block;
-    margin: 3px 1px 7px 2px;
-    border-left: 2px solid red;
-    background-color: white;
-    padding-bottom: 5px;
-    padding-right: 8px;
-
-}
-.tags li.tags-li{
-    padding-right: 12px;
-}
-.tagsH {
-    margin-left: 10px;
-    padding-top: 10px;
-}
+/*.tagsH {*/
+/**/
+    /*margin: 0px;*/
+/*}*/
+/*.tags{*/
+    /*float: left;*/
+    /*padding-top: 13px;*/
+/*}*/
+/*footer   ul.tags4 {*/
+    /*display: block;*/
+    /*width: 330px;*/
+    /*padding: 26px 10px 15px 10px;*/
+    /*margin-right: 20px;*/
+    /*margin-top: 0px;*/
+/*}*/
+/*.tags li {*/
+    /*list-style-type: none;*/
+    /*display: inline-block;*/
+    /*margin: 3px 1px 7px 2px;*/
+    /*border-left: 2px solid red;*/
+    /*background-color: white;*/
+    /*padding-bottom: 5px;*/
+    /*padding-right: 8px;*/
+/**/
+/*}*/
+/*.tags li.tags-li{*/
+    /*padding-right: 12px;*/
+/*}*/
+/*.tagsH {*/
+    /*margin-left: 10px;*/
+    /*padding-top: 10px;*/
+/*}*/
 .textW {
     margin-left: 122px;
     width: 280px;
@@ -104,11 +104,11 @@ footer   ul.tags4 {
     width: 100%;
 }
 
-footer div ul li a {
-    display: block;
-    margin-left: -1px;
-    padding: -10px 10px;
-    color: black;
-    text-decoration: none;
-    width: auto;
-}
+/*footer div ul li a {*/
+    /*display: block;*/
+    /*margin-left: -1px;*/
+    /*padding: -10px 10px;*/
+    /*color: black;*/
+    /*text-decoration: none;*/
+    /*width: auto;*/
+/*}*/

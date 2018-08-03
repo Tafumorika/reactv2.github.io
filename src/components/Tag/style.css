@@ -1,0 +1,17 @@
+.a-tag {
+    display: block;
+    margin-left: -1px;
+    padding: -10px 10px;
+    color: black;
+    text-decoration: none;
+    width: auto;
+}
+.li-tag {
+    list-style-type: none;
+    display: inline-block;
+    margin: 3px 1px 7px 2px;
+    border-left: 2px solid red;
+    background-color: white;
+    padding-bottom: 5px;
+    padding-right: 8px;
+}

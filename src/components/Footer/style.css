@@ -3,11 +3,9 @@ footer {
     margin: 10px auto 0px auto;
     padding-top: 11px;
 }
-footer nav {
+.nav-footer {
     width: 1050px;
     margin: 0px auto;
-
-
 }
 footer div {
     display: inline-block;
@@ -17,12 +15,10 @@ footer div {
     height:  100%;
 }
 .rec{
-    /*margin-top: 25px;*/
     padding-top: 3px;
     margin-left: 0px;
 }
 .recent {
-
     float:left;
     word-spacing: 3px;
     margin-left: 3px;
@@ -30,50 +26,16 @@ footer div {
     padding: 0px;
 
 }
-footer .recent ul {
+.ul-recent {
     margin-top: 26px;
     padding-left: 28px;
     line-height: 19px;
-
 }
-footer .recent li{
+.li-recent {
     font-size: 13px;
     list-style-type:square;
     margin-left: -15px;
-
 }
-/*.tagsH {*/
-/**/
-    /*margin: 0px;*/
-/*}*/
-/*.tags{*/
-    /*float: left;*/
-    /*padding-top: 13px;*/
-/*}*/
-/*footer   ul.tags4 {*/
-    /*display: block;*/
-    /*width: 330px;*/
-    /*padding: 26px 10px 15px 10px;*/
-    /*margin-right: 20px;*/
-    /*margin-top: 0px;*/
-/*}*/
-/*.tags li {*/
-    /*list-style-type: none;*/
-    /*display: inline-block;*/
-    /*margin: 3px 1px 7px 2px;*/
-    /*border-left: 2px solid red;*/
-    /*background-color: white;*/
-    /*padding-bottom: 5px;*/
-    /*padding-right: 8px;*/
-/**/
-/*}*/
-/*.tags li.tags-li{*/
-    /*padding-right: 12px;*/
-/*}*/
-/*.tagsH {*/
-    /*margin-left: 10px;*/
-    /*padding-top: 10px;*/
-/*}*/
 .textW {
     margin-left: 122px;
     width: 280px;
@@ -91,7 +53,6 @@ footer .recent li{
     line-height: 22px;
 }
 
-
 .copyright {
     padding: 0px 5px 20px 0px;
     font-size: 14px;
@@ -104,11 +65,43 @@ footer .recent li{
     width: 100%;
 }
 
-/*footer div ul li a {*/
-    /*display: block;*/
-    /*margin-left: -1px;*/
-    /*padding: -10px 10px;*/
-    /*color: black;*/
-    /*text-decoration: none;*/
-    /*width: auto;*/
-/*}*/
+@media screen and (max-width:900px){
+
+    footer {
+        background: #2c4956;
+        width: 100%;
+        padding-left: 5px;
+    }
+    .nav-footer {
+        width: 100%;
+        padding-top: 10px;
+    }
+    footer div{
+        width: 100%;
+        display: block;
+        padding: 0px 0px 0px 10px;
+        margin: 0px;
+    }
+    .recent{
+        padding: 0px;
+        margin: 0px;
+    }
+    .textW, .copyright {
+        margin: 0px;
+    }
+    .recent, .textW, .copyright{
+        padding: 0px 0px 0px 5px;
+        width: 95%;
+    }
+    .ul-recent {
+        margin-left: 10px;
+        width: 100%;
+    }
+    .li-recent {
+        width: 100%;
+    }
+
+    .textWp {
+        padding-left: 10px;
+    }
+}

@@ -5,15 +5,21 @@ import './style.css';
 
 const Comment = (props) =>{
     const {img, name, text, date}=props;
-    return(<div className="comment1">
+    return(<div className="comment">
         <img alt="avatar" src={img} className="avatar"/>
         <p className="name-comment"><a href="#link5" className="color-text">{name}</a></p>
         <p className="text-comment">{text}</p>
-        <p className="data-comment">{date}<a href="#link6" className="color-text">Reply</a></p>
+        <p className="date-comment">{date}<a href="#link6" className="color-text">Reply</a></p>
         </div>
     );
 
 }
+export {Comment}
+
+
+
+
+
 // class Comment extends React.Component{
     // render() {
     //     const newComment = this.props.data.map(function (item) {
@@ -33,4 +39,3 @@ const Comment = (props) =>{
         // )
     // }
 // }
-export {Comment}

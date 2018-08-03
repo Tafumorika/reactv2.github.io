@@ -33,7 +33,7 @@ const myTags = [
         content:'Tag 3'
     }
 
-]
+];
 
 
 const TagList = () => {

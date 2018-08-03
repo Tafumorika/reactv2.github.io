@@ -17,3 +17,21 @@
     padding-top: 10px;
 
 }
+
+@media screen and (max-width:900px){
+     .tags {
+        margin: 0px;
+        padding: 0px 0px 0px 5px;
+        width: 95%;
+    }
+
+    .ul-tag {
+        margin: 0px;
+        padding: 20px 0px 0px 5px;
+        width: 100%;
+    }
+    .h3-tag {
+        margin: 0px;
+        padding: 0px;
+    }
+}

@@ -1,14 +1,10 @@
 .App {
   /*text-align: center;*/
-  background-color: #ebebeb;
-  font-family: Arial;
-  margin:0px;
+  /*font-family: Arial;*/
+  /*margin:0px;*/
 }
 
 
-*{
-  box-sizing: border-box;
-}
 p, li {
   color: grey;
   padding: 5px;

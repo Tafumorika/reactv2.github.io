@@ -37,15 +37,10 @@ const myTags = [
 
 
 const TagList = () => {
-    const tagcontent = myTags.map(function (item) {
-        return(
-            <Tag content={item.content}/>
-        )
-    });
     return (<div className="tags">
         <h3 className="h3-tag">Tags</h3>
         <ul className="ul-tag">
-            {tagcontent}
+            {myTags.map((item) => <Tag content={item.content}/>)}
         </ul>
         </div>
     )

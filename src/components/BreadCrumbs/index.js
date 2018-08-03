@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.css';
 
+// TODO ссылки принимать из props
 const BreadCrumbs = () => {
     return(
         <div className="breadCrumbs">

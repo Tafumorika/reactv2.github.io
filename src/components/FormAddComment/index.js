@@ -15,6 +15,7 @@ const FormAddComment = () => {
                 <label className="label-form" htmlFor="website">Website:</label>
                 <input className="input-form" type="text" id="website" name="website"/>
                 <div className="buttons">
+                    {/* TODO: кнопку в отдельный компонент. <input> заменить на <buton> */}
                     <input className="submit-red" type="submit" value="Add Comment"/>
                 </div>
             </form>

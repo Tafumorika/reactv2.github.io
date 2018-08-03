@@ -2,7 +2,7 @@ import React from 'react';
 import './style.css';
 
 
-
+// TODO классы переименовать
 const Comment = (props) =>{
     const {img, name, text, date}=props;
     return(<div className="comment">

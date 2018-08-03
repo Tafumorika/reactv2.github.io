@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.css';
 
+// TODO: иконки в отдельный компонент
 const Content = () => {
     return (
         <div>
@@ -17,6 +18,7 @@ const Content = () => {
     dolor sit amet, consectetuer adipiscing elit. Curabitur quam augue, vechicula quis, tincidunt vel, varius vitae,nulla.
         Sed convallis orci. Duis libero orci, pretium a,<a href="#link3" className="color-text">convallis quis</a>, pellentesque a, dolor.
         Curabitur vitae nisi non dolor vestibulum consequat.</p>
+            {/* TODO: переделать на h1-6*/}
     <div className="heads">
         <p className="level1">Level 1 Heading</p>
         <p className="level2">Level 2 Heading</p>

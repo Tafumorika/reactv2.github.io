@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.css';
 
+// TODO дату принимать из props
 const BoxRed = () => {
     return (
         <div className="box-red">

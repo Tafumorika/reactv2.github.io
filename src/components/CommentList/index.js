@@ -45,6 +45,7 @@ const myComments =[
     }
 ];
 
+// TODO переименовать классы
 const CommentList = () => {
     const comments = myComments.map(function (item, index) {
         return (

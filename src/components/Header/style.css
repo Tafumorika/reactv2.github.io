@@ -35,13 +35,13 @@
 }
 @media screen and (max-width:900px) {
 
-    header nav {
+    .main-menu {
         width: 100%;
         margin: 0px;
         padding-left: 5px;
     }
 
-    header ul {
+    .ul-header {
         width: 100%;
         margin: 0px;
     }

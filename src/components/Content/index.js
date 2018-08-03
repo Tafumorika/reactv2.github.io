@@ -6,9 +6,9 @@ const Content = () => {
         <div>
         <h1 className="h1s">A Post with Everything In It</h1>
     <div className="icons">
-        <img alt="Icons-user" src="/img/icons8-user-account-filled-50.png"/> By MyThemeShop
-        <img alt="Icons-speech" src="/img/icons8-filled-bookmark-ribbon-32.png"/> featured, Mobiles
-        <img alt="Icons-filled" src="/img/icons8-speech-bubble-filled-50.png"/> 5 Comments
+        <img className="img-icons" alt="Icons-user" src="/img/icons8-user-account-filled-50.png"/> By MyThemeShop
+        <img className="img-icons" alt="Icons-speech" src="/img/icons8-filled-bookmark-ribbon-32.png"/> featured, Mobiles
+        <img className="img-icons" alt="Icons-filled" src="/img/icons8-speech-bubble-filled-50.png"/> 5 Comments
     </div>
     <img alt="Flower and butterfly" className="img1" src="/img/20160329105513-bf3f94fb.jpg"/>
         <p className="fonts">Pellentesque habitant morbi tristeque senectus et netus et malesuada fames ac turpis egestas.
@@ -35,11 +35,11 @@ const Content = () => {
     </p>
     <p className="ps">An Unordered List</p>
     <ul className="squares">
-        <li>Vestibulum in mauris semper tortor interdum ultrices.</li>
-    <li>Sed vel lorem et justo laoreet bibendum. Donec dictum</li>
-    <li>Etiam massa libero, lacinia at, commodo in, tincidunt a, purus.</li>
-    <li>Prasent volutpat eros quis enim blandit tincidunt.</li>
-    <li>Aenean eu libero nec lectus ultricies laoreet. Donec rutrum, nisi
+        <li className="li-squares">Vestibulum in mauris semper tortor interdum ultrices.</li>
+    <li className="li-squares">Sed vel lorem et justo laoreet bibendum. Donec dictum</li>
+    <li className="li-squares">Etiam massa libero, lacinia at, commodo in, tincidunt a, purus.</li>
+    <li className="li-squares">Prasent volutpat eros quis enim blandit tincidunt.</li>
+    <li className="li-squares">Aenean eu libero nec lectus ultricies laoreet. Donec rutrum, nisi
     vel egestas ultrices, ipsum urna sagittis libero, vitae vestibulum dui dolor vel velit.</li>
 </ul>
     <p className="ps1">Image with no alignment</p>
@@ -62,11 +62,11 @@ const Content = () => {
 
         <h2>An Ordered List</h2>
         <ol className="ols" >
-            <li>Vestibulum in mauris semper tortor interdum ultrices.</li>
-            <li>Sed vel lorem et justo laoreet bibendum. Donec dictum.</li>
-            <li>Etiam massa libero, lacinia at, commodo in, tincidunt a,purus.</li>
-            <li>Praesent volutpat eros quis enim blandit tincidunt.</li>
-            <li>Aenean eu libero nec lectus ultricies laoreet. Donec rutrum, nisi vel egestas ultrices, ipsum urna sagitties libero,
+            <li className="li-ols">Vestibulum in mauris semper tortor interdum ultrices.</li>
+            <li className="li-ols">Sed vel lorem et justo laoreet bibendum. Donec dictum.</li>
+            <li className="li-ols">Etiam massa libero, lacinia at, commodo in, tincidunt a,purus.</li>
+            <li className="li-ols">Praesent volutpat eros quis enim blandit tincidunt.</li>
+            <li className="li-ols">Aenean eu libero nec lectus ultricies laoreet. Donec rutrum, nisi vel egestas ultrices, ipsum urna sagitties libero,
                 vitae vestibulum dui dolor vel velit.
             </li>
         </ol>

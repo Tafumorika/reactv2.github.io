@@ -1,18 +1,13 @@
-main .fonts {
+ .fonts {
     font-size: 14px;
     margin: 0px;
     line-height: 22px;
     padding-top: 12px;
     padding-left: 1px;
 }
-main img {
-    /*padding-top: 0px;*/
+img {
     width: 440px;
     max-width: 100%;
-
-}
-h1 {
-    padding-top: 8px;
 }
 
 .level1 {
@@ -63,10 +58,7 @@ h1 {
     padding-bottom: 15px;
     margin: 0px;
 }
-.img1 {
-    width: 500px;
-    /*height: 335px;*/
-}
+
 
 .div-img2 {
     margin-bottom: -5px;
@@ -84,17 +76,16 @@ h1 {
     font-size: 13px;
     margin-top:-13px;
     margin-bottom: 13px;
-
 }
-.icons img {
+.img-icons {
     width: 15px;
     height: 15px;
     padding-right: 9px;
 }
 
-main section {
-    display: inline;
-}
+/*section {*/
+    /*display: inline;*/
+/*}*/
 .squares {
     list-style-type: square;
     word-spacing: 2px;
@@ -104,7 +95,7 @@ main section {
     margin-top: 20px;
 
 }
-.squares li {
+.li-squares {
     font-size: 13px;
 }
 
@@ -121,7 +112,7 @@ main section {
     padding-top: 3px;
     margin-bottom: 30px;
 }
-.ols li{
+.li-ols {
     font-size: 14px;
     margin: -3px 0px 4px -14px;
 
@@ -136,4 +127,10 @@ main section {
 }
 .com-5 {
     padding-bottom: 10px;
+}
+ .img3 {
+    float: left;
+    padding-right: 10px;
+    padding-top:10px;
+
 }

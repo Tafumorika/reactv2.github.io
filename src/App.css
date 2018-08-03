@@ -15,58 +15,5 @@ p, li {
 }
 
 
-@media screen and (max-width:900px){
-
-  footer {
-    background: #2c4956;
-    width: 100%;
-    padding-left: 5px;
-
-  }
-  footer nav {
-    width: 100%;
-    padding-top: 10px;
-  }
-  footer div{
-    width: 100%;
-    /*height:  100%;*/
-    display: block;
-    padding: 0px 0px 0px 10px;
-    margin: 0px;
-  }
-  .recent{
-    padding: 0px;
-    margin: 0px;
-  }
-  .textW, .tags, .copyright {
-    margin: 0px;
-  }
-  .recent, .tags, .textW, .copyright{
-    padding: 0px 0px 0px 5px;
-    width: 95%;
-  }
-  .recent ul {
-    margin-left: 10px;
-    width: 100%;
-  }
-  .recent li {
-    width: 100%;
-  }
-
-  footer ul.tags4 {
-    margin: 0px;
-    padding: 20px 0px 0px 5px;
-    width: 100%;
-  }
-  .tagsH {
-    margin: 0px;
-    padding: 0px;
-  }
-  .textWp {
-    padding-left: 10px;
-  }
-}
-
-
 
 

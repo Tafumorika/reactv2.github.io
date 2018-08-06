@@ -1,16 +1,15 @@
 import React from 'react';
 import './style.css';
+import {IconList} from "../IconList";
 
 // TODO: иконки в отдельный компонент
 const Content = () => {
     return (
         <div>
         <h1 className="h1s">A Post with Everything In It</h1>
-    <div className="icons">
-        <img className="img-icons" alt="Icons-user" src="/img/icons8-user-account-filled-50.png"/> By MyThemeShop
-        <img className="img-icons" alt="Icons-speech" src="/img/icons8-filled-bookmark-ribbon-32.png"/> featured, Mobiles
-        <img className="img-icons" alt="Icons-filled" src="/img/icons8-speech-bubble-filled-50.png"/> 5 Comments
-    </div>
+
+            <IconList/>
+
     <img alt="Flower and butterfly" className="img1" src="/img/20160329105513-bf3f94fb.jpg"/>
         <p className="fonts">Pellentesque habitant morbi tristeque senectus et netus et malesuada fames ac turpis egestas.
         Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
@@ -20,12 +19,12 @@ const Content = () => {
         Curabitur vitae nisi non dolor vestibulum consequat.</p>
             {/* TODO: переделать на h1-6*/}
     <div className="heads">
-        <p className="level1">Level 1 Heading</p>
-        <p className="level2">Level 2 Heading</p>
-        <p className="level3">Level 3 Heading</p>
-        <p className="level4">Level 4 Heading</p>
-        <p className="level5">Level 5 Heading</p>
-        <p className="level6">Level 6 Heading</p>
+        <h1>Level 1 Heading</h1>
+        <h2>Level 2 Heading</h2>
+        <h3>Level 3 Heading</h3>
+        <h4>Level 4 Heading</h4>
+        <h5>Level 5 Heading</h5>
+        <h6>Level 6 Heading</h6>
     </div>
     <p className="tops">Pellentesque habitant morbi tristigue senectus et netus et malesuada fames ac turpis egestas.
         Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.

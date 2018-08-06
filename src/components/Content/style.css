@@ -10,39 +10,6 @@ img {
     max-width: 100%;
 }
 
-.level1 {
-    font-size: 28px;
-    margin: 0px;
-    padding-top: 20px;
-
-}
-.level2 {
-    font-size: 26px;
-    margin: 10px 0px 0px 0px;
-    word-spacing: 4.7px;
-}
-.level3 {
-    font-size: 23px;
-    margin: 5px 0px 0px 0px;
-    word-spacing: 0.5px;
-}
-.level4 {
-    font-size: 21px;
-    margin: 5px 0px 0px 0px;
-}
-.level5 {
-    font-size: 19px;
-    margin: 3px 0px 0px 0px;
-}
-.level6 {
-    font-size: 17px;
-    margin: 7px 0px 2px 0px;
-    padding-top: 5px;
-}
-.level1, .level2, .level3, .level4, .level5, .level6 {
-    padding-left: 2px;
-}
-
 .ps {
     font-size: 22px;
     margin-top: 13px;
@@ -72,16 +39,7 @@ img {
     margin: 0px;
     padding-left: 2px;
 }
-.icons {
-    font-size: 13px;
-    margin-top:-13px;
-    margin-bottom: 13px;
-}
-.img-icons {
-    width: 15px;
-    height: 15px;
-    padding-right: 9px;
-}
+
 
 /*section {*/
     /*display: inline;*/

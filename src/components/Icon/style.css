@@ -1,0 +1,13 @@
+.icons {
+    font-size: 13px;
+    margin-top:-13px;
+    margin-bottom: 13px;
+}
+.img-icons {
+    width: 15px;
+    height: 15px;
+    padding-right: 9px;
+}
+.icons-list-item {
+    display: inline-block;
+}

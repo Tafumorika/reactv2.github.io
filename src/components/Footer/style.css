@@ -7,7 +7,7 @@ footer {
     width: 1050px;
     margin: 0px auto;
 }
-footer div {
+.column {
     display: inline-block;
     color: white;
     margin-right: auto;

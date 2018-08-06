@@ -5,7 +5,7 @@ import './style.css';
 const BoxRed = () => {
     return (
         <div className="box-red">
-            <span className="span-box-red">January 7, 2017</span>
+            <span className="box-red-text">January 7, 2017</span>
         </div>
     )
 }

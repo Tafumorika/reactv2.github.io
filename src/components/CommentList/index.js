@@ -47,7 +47,7 @@ const myComments =[
 
 // TODO переименовать классы
 const CommentList = () => {
-    const comments = myComments.map(function (item, index) {
+    const commentsList = myComments.map(function (item, index) {
         return (
             <div className={'comment-level-' + item.level}>
                 {index ===0 ? '':<hr />}
@@ -58,7 +58,7 @@ const CommentList = () => {
 
      return (
          <nav className="comments">
-             {comments}
+             {commentsList}
          </nav>
      )
  }

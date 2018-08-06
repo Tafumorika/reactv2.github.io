@@ -3,9 +3,9 @@ import './style.css';
 
 
 const Tag = (props) => {
-    const {content} = props;
+    const {tagContent, tagLink} = props;
     return (
-        <li className="li-tag"><a className="a-tag" href="#link13">{content}</a></li>
+        <li className="li-tag"><a className="a-tag" href={tagLink}>{tagContent}</a></li>
     )
 }
 export {Tag}

@@ -14,28 +14,25 @@ footer {
     width: 25%;
     height:  100%;
 }
-.rec{
-    padding-top: 3px;
-    margin-left: 0px;
-}
-.recent {
+
+.column1 {
     float:left;
     word-spacing: 3px;
     margin-left: 3px;
     margin-right: 100px;
     padding: 0px;
 }
-.ul-recent {
+.column1-list {
     margin-top: 26px;
     padding-left: 28px;
     line-height: 19px;
 }
-.li-recent {
+.column1-list-item {
     font-size: 13px;
     list-style-type:square;
     margin-left: -15px;
 }
-.textW {
+.column3 {
     margin-left: 122px;
     width: 280px;
     font-size: 15px;
@@ -44,7 +41,7 @@ footer {
     word-spacing: 1px;
     float: left;
 }
-.textWp {
+.column3-text {
     padding-top: 14px;
     margin-left: 0px;
     padding-left: 0px;
@@ -75,32 +72,32 @@ footer {
         width: 100%;
         padding-top: 10px;
     }
-    footer div{
+    .column{
         width: 100%;
         display: block;
         padding: 0px 0px 0px 10px;
         margin: 0px;
     }
-    .recent{
+    .column1{
         padding: 0px;
         margin: 0px;
     }
-    .textW, .copyright {
+    .column3, .copyright {
         margin: 0px;
     }
-    .recent, .textW, .copyright{
+    .column1, .column3, .copyright{
         padding: 0px 0px 0px 5px;
         width: 95%;
     }
-    .ul-recent {
+    .column1-list {
         margin-left: 10px;
         width: 100%;
     }
-    .li-recent {
+    .column1-list-item {
         width: 100%;
     }
 
-    .textWp {
+    .column3-text {
         padding-left: 10px;
     }
 }

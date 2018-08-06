@@ -11,22 +11,22 @@
     margin-left: -34px;
 
 }
-.ul-header {
+.header-list {
     width: 1050px;
     margin: 0 auto;
 
 }
-.li-header {
+.header-list-item {
     list-style-type: none;
     display: inline-block;
     margin-left: -25px;
     margin-right: 5px;
 
 }
-.li-header:hover {
+.header-list-item:hover {
     background: #253d48;
 }
-.a-header {
+.header-link {
     display: block;
     margin-right: 22px;
     padding: 8px 0px 6px 20px ;
@@ -41,7 +41,7 @@
         padding-left: 5px;
     }
 
-    .ul-header {
+    .header-list {
         width: 100%;
         margin: 0px;
     }

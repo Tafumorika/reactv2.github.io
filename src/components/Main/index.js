@@ -4,7 +4,7 @@ import './style.css';
 
 const Main = (props) => {
     return (
-        <div className="main-div">
+        <div className="main-content">
             <main>
                 {props.children}
             </main>

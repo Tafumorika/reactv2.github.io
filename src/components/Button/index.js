@@ -3,7 +3,7 @@ import './style.css';
 
 const Button = () => {
     return(
-        <button className="submit-red">Add Comment</button>
+        <button className="button-red">Add Comment</button>
     )
 }
 export {Button}

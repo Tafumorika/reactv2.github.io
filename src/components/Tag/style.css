@@ -1,4 +1,4 @@
-.a-tag {
+.tag-link {
     display: block;
     margin-left: -1px;
     padding: -10px 10px;
@@ -6,7 +6,7 @@
     text-decoration: none;
     width: auto;
 }
-.li-tag {
+.tag-list-item {
     list-style-type: none;
     display: inline-block;
     margin: 3px 1px 7px 2px;

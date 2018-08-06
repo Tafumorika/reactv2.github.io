@@ -1,3 +1,8 @@
+.icons {
+    font-size: 13px;
+    margin-top:-13px;
+    margin-bottom: 13px;
+}
 .icons-list {
     list-style-type: none;
     padding-left: 5px;

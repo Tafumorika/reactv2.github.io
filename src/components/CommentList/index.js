@@ -25,7 +25,7 @@ const myComments =[
         img:"/img/an-answer.JPG" ,
         name:'Lloyd Budd',
         text:'This book is a treatise on the theory of ethics, very popular during the Renaissance.',
-        date:'June 27, 2012'
+        date:'June 27, 2012 '
     },
     {
         id:4,
@@ -33,7 +33,7 @@ const myComments =[
         img:"/img/answer2.JPG" ,
         name:'Joseph Scott',
         text:'Nulla sagittis convallis arcu. Sed sed nunc. Curabitur consequat.Quisque metus enim, venenatis fermentum,mollis in, porta et, nibh. Duis vulputate elit in elit. Mauris dictum.',
-        date:'June 27, 2012'
+        date:'June 27, 2012 '
     },
     {
         id:5,
@@ -57,7 +57,7 @@ const CommentList = () => {
     });
 
      return (
-         <nav className="comments">
+         <nav className="commentsList">
              {commentsList}
          </nav>
      )

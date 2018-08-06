@@ -3,8 +3,26 @@
 }
 
 body {
+  color: grey;
   margin: 0;
   padding: 0;
   font-family: sans-serif;
   background-color: #ebebeb;
+
+}
+p, li {
+  color: grey;
+  padding: 5px;
+}
+
+.color-text {
+  text-decoration: none;
+  color: red;
+  padding-right: 5px;
+}
+@media screen and (max-width:900px) {
+
+  img {
+    width: 100%;
+  }
 }

@@ -43,9 +43,9 @@ const myTags = [
 
 
 const TagList = () => {
-    return (<div className="column tags">
-        <h3 className="h3-tag">Tags</h3>
-        <ul className="ul-tag">
+    return (<div className="column column2">
+        <h3 className="tag-h3">Tags</h3>
+        <ul className="tag-list">
             {myTags.map((item) => <Tag tagContent={item.tagContent} tagLink={item.tagLink}/>)}
         </ul>
         </div>

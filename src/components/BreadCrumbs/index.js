@@ -1,11 +1,12 @@
 import React from 'react';
 import './style.css';
+import {Link} from "../Link";
 
 // TODO ссылки принимать из props
 const BreadCrumbs = () => {
     return(
         <div className="breadCrumbs">
-            <p className="top1"><a href="#link1" className="color-text">Home</a>»<a href="#link2" className="color-text1">featured</a>» A Post with Everything in it</p>
+            <p className="bread-crumbs"><Link href="#link1">Home</Link>»<Link href="#link2">featured</Link>» A Post with Everything in it</p>
         </div>
     )
 }

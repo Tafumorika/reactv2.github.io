@@ -1,5 +1,6 @@
 import React from 'react';
 import './style.css';
+import {Button} from "../Button";
 
 const FormAddComment = () => {
     return(
@@ -14,10 +15,10 @@ const FormAddComment = () => {
                 <input className="input-form"  type="email" id="email" name="email" required/>
                 <label className="label-form" htmlFor="website">Website:</label>
                 <input className="input-form" type="text" id="website" name="website"/>
-                <div className="buttons">
+
                     {/* TODO: кнопку в отдельный компонент. <input> заменить на <buton> */}
-                    <input className="submit-red" type="submit" value="Add Comment"/>
-                </div>
+                    <Button/>
+
             </form>
         </div>
     )

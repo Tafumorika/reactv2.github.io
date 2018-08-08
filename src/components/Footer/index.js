@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.css';
 import {TagList} from '../TagList';
+import {ClearFloat} from "../ClearFloat";
 
 const Footer = () => {
     return(
@@ -26,7 +27,7 @@ const Footer = () => {
                 <div className="column copyright">
                     <p>Copyright © 2018</p>
                 </div>
-                <div className="clear-div"/>
+                <ClearFloat/>
             </nav>
         </footer>
     )

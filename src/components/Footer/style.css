@@ -56,10 +56,7 @@ footer {
     margin-left: -3px;
     float: left;
 }
-.clear-div{
-    clear: both;
-    width: 100%;
-}
+
 
 @media screen and (max-width:900px){
 

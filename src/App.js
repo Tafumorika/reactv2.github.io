@@ -16,7 +16,7 @@ class App extends Component {
 
           <Header />
           <Main>
-                  <BoxRed />
+                  <BoxRed>January 7, 2017</BoxRed>
                   <BreadCrumbs />
                   <Content/>
                    <CommentList/>

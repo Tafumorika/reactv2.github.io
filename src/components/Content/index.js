@@ -2,6 +2,7 @@ import React from 'react';
 import './style.css';
 import {IconList} from "../IconList";
 import {Link} from "../Link";
+import {ClearFloat} from "../ClearFloat";
 
 // TODO: иконки в отдельный компонент
 const Content = () => {
@@ -61,7 +62,7 @@ const Content = () => {
                 owned volutpizzle, brizzle quizzle, qravida vizzle, arcu. Pellentesque away tortizzle. Sizzle sheezy. Shit at fizzle
                 tempus tempor. Dizzle rizzle nibh et fo shizzle. Pimpin' izzle tortor. Gizzle gizzle phat shiz.</p>
         </div>
-            <div className="clear-div"/>
+            <ClearFloat/>
         <h2>An Ordered List</h2>
         <ol className="content-list" >
             <li className="content-list-item">Vestibulum in mauris semper tortor interdum ultrices.</li>

@@ -23,6 +23,7 @@ state = {
         }
     ]
 };
+
 render () {
     return (
         <div className="icons">

@@ -1,9 +1,10 @@
 import React from 'react';
 import './style.css';
 
-const Button = () => {
+// TODO: props.children
+const Button = (props) => {
     return(
-        <button className="button-red">Add Comment</button>
+        <button className="button-red" onClick={props.onClick}>Add Comment</button>
     )
 }
 export {Button}

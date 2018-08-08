@@ -11,6 +11,7 @@ import {Footer} from './components/Footer';
 
 class App extends Component {
     state = {
+        counter: 0,
         myCommentList: [
             {
                 id: 1,
@@ -54,6 +55,25 @@ class App extends Component {
             }
         ]
     };
+
+
+    changeCounter = (data) => {
+        console.log('click 2', data);
+        // this.setState({
+        //     counter: this.state.counter + 1,
+        //     myCommentList: [
+        //
+        //         {
+        //             id: 5,
+        //             level: 1,
+        //             img: "/img/admin.JPG",
+        //             name: 'Admin',
+        //             text: 'Nulla sagittis convallis arcu. Sed sed nunc. Curabitur consequat. Quisque metus enim, venenatis fermentum, mollis in, porta et, nibh.Duis vulputate elit in elit.',
+        //             date: 'June 7, 2012 '
+        //         }
+        //     ]
+        // });
+    }
     // updateData =(item) => {
     //     this.setState({img: item.img, name: item.name, text:item.text, date:item.date})
     // }
@@ -66,7 +86,7 @@ class App extends Component {
                     <BreadCrumbs/>
                     <Content/>
                     <CommentList myCommentList={this.state.myCommentList}/>
-                    <FormAddComment/>
+                    <FormAddComment changeCounter={this.changeCounter}/>
                 </Main>
                 <Footer/>
 

@@ -3,7 +3,7 @@ import './style.css';
 
 const ClearFloat = () => {
     return (
-        <div className="clear-div"/>
+        <div className="clear-float"/>
     )
 }
 export {ClearFloat}

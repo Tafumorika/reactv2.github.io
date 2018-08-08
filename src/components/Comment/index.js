@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './style.css';
 import {Link} from "../Link";
 
@@ -14,5 +15,14 @@ const Comment = (props) =>{
         </div>
     );
 
-}
+};
+
+Comment.propTypes = {
+    img: PropTypes.string,
+    name:PropTypes.string,
+    text:PropTypes.string,
+    date:PropTypes.string
+};
+
 export {Comment}
+

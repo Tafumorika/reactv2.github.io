@@ -2,7 +2,8 @@ import React from 'react';
 import './style.css';
 import {Comment} from '../Comment';
 
-const myComments =[
+
+const myCommentsList =[
     {
         id:1,
         level:1,
@@ -45,9 +46,10 @@ const myComments =[
     }
 ];
 
+
 // TODO переименовать классы
 const CommentList = () => {
-    const commentsList = myComments.map(function (item, index) {
+    const commentsList = myCommentsList.map(function (item, index) {
         return (
             <div className={'comment-level-' + item.level}>
                 {index ===0 ? '':<hr />}

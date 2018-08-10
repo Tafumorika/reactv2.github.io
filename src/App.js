@@ -56,7 +56,7 @@ class App extends Component {
     };
 
 
-    changeCounter = (data) => {
+    changeComment = (data) => {
         console.log('click 2', data);
         const dataId = {...data, id: this.state.myCommentList.length+1}
         this.setState ({
@@ -74,7 +74,7 @@ class App extends Component {
                     <BreadCrumbs/>
                     <Content/>
                     <CommentList myCommentList={this.state.myCommentList}/>
-                    <FormAddComment changeCounter={this.changeCounter}/>
+                    <FormAddComment changeComment={this.changeComment}/>
                 </Main>
                 <Footer/>
 

@@ -5,7 +5,7 @@ import {Button} from "../Button";
 
 class FormAddComment extends Component {
     state = {
-        myForm: {
+        myFormList: {
             id: '',
             level:'',
             img:  '',
@@ -19,13 +19,13 @@ class FormAddComment extends Component {
     submitForm = (event) => {
         event.preventDefault();
         console.log(this.state);
-        this.props.changeCounter(this.state.myForm);
+        this.props.changeComment(this.state.myFormList);
     };
 
 
     addChange =(event) => {
         console.log(event.target.name);
-        this.setState({myForm: {...this.state.myForm, [event.target.name]: event.target.value}})
+        this.setState({myFormList: {...this.state.myFormList, [event.target.name]: event.target.value}})
     };
 
     render() {

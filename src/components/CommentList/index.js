@@ -6,7 +6,7 @@ import {Comment} from '../Comment';
 
 
 
-// TODO переименовать классы
+
 class CommentList extends React.Component {
     render() {
 
@@ -15,7 +15,6 @@ class CommentList extends React.Component {
                 <div key={item.id} className={'comment-level-' + item.level}>
                     {index === 0 ? '' : <hr/>}
                     <Comment img={item.img} name={item.name} text={item.text} date={item.date}/>
-                    {/*<Comment updateData={this.updateData}/>*/}
                 </div>
             )
         });
@@ -30,7 +29,9 @@ class CommentList extends React.Component {
 
 CommentList.propTypes ={
     myCommentList: PropTypes.arrayOf(PropTypes.shape({
-        img: PropTypes.string
+        img: PropTypes.string,
+        name: PropTypes.string,
+        text: PropTypes.string
     }))
 };
 

@@ -6,7 +6,8 @@ import {Link} from "../Link";
 
 // TODO классы переименовать
 const Comment = (props) =>{
-    const {img, name, text, date}=props;
+    const {img, name, text, date} = props;
+
     return(<div className="comment">
         <img alt="avatar" src={img} className="comment-avatar"/>
         <p className="comment-style name-comment"><Link href="#link5">{name}</Link></p>

@@ -4,7 +4,7 @@ import {IconList} from "../IconList";
 import {Link} from "../Link";
 import {ClearFloat} from "../ClearFloat";
 
-// TODO: иконки в отдельный компонент
+
 const Content = () => {
     return (
         <div>

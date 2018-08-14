@@ -1,13 +1,14 @@
 import React, {Component} from 'react';
 import './App.css';
-import {Header} from './components/Header';
-import {BoxRed} from './components/Box-red';
-import {BreadCrumbs} from './components/BreadCrumbs';
-import {Content} from './components/Content';
-import {FormAddComment} from './components/FormAddComment';
-import {CommentList} from './components/CommentList/index';
-import {Main} from './components/Main';
-import {Footer} from './components/Footer';
+import {Header} from '../Header';
+import {BoxRed} from '../Box-red';
+import {BreadCrumbs} from '../BreadCrumbs';
+import {Content} from '../Content';
+import {FormAddComment} from '../FormAddComment';
+import {CommentList} from '../CommentList/index';
+import {Main} from '../Main';
+import {Footer} from '../Footer';
+import {imgList} from "../../constants/images";
 
 class App extends Component {
     state = {
@@ -15,7 +16,7 @@ class App extends Component {
             {
                 id: 1,
                 level: 1,
-                img: "/img/Comment1.JPG",
+                img: imgList.comment1,
                 name: 'Coen Jacobs',
                 text: 'It is a long estabished fact that a reader will be distracted by the readable contebt of a page when looking at its layout.',
                 date: 'April 14, 2012 '
@@ -23,7 +24,7 @@ class App extends Component {
             {
                 id: 2,
                 level: 2,
-                img: "/img/answer-comment1.JPG",
+                img: imgList.comment2,
                 name: 'Alex Shiels',
                 text: 'The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.',
                 date: 'April 14, 2012 '
@@ -31,7 +32,7 @@ class App extends Component {
             {
                 id: 3,
                 level: 3,
-                img: "/img/an-answer.JPG",
+                img: imgList.comment3,
                 name: 'Lloyd Budd',
                 text: 'This book is a treatise on the theory of ethics, very popular during the Renaissance.',
                 date: 'June 27, 2012 '
@@ -39,7 +40,7 @@ class App extends Component {
             {
                 id: 4,
                 level: 2,
-                img: "/img/answer2.JPG",
+                img: imgList.comment4,
                 name: 'Joseph Scott',
                 text: 'Nulla sagittis convallis arcu. Sed sed nunc. Curabitur consequat.Quisque metus enim, venenatis fermentum,mollis in, porta et, nibh. Duis vulputate elit in elit. Mauris dictum.',
                 date: 'June 27, 2012 '
@@ -47,7 +48,7 @@ class App extends Component {
             {
                 id: 5,
                 level: 1,
-                img: "/img/admin.JPG",
+                img: imgList.comment5,
                 name: 'Admin',
                 text: 'Nulla sagittis convallis arcu. Sed sed nunc. Curabitur consequat. Quisque metus enim, venenatis fermentum, mollis in, porta et, nibh.Duis vulputate elit in elit.',
                 date: 'June 7, 2012 '
@@ -63,7 +64,7 @@ class App extends Component {
             myCommentList: [...this.state.myCommentList, dataId]
         })
 
-    }
+    };
 
     render() {
         return (

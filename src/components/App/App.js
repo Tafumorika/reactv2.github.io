@@ -9,6 +9,8 @@ import {CommentList} from '../CommentList/index';
 import {Main} from '../Main';
 import {Footer} from '../Footer';
 import {imgList} from "../../constants/images";
+import {Counter} from "../Counter/index";
+import EnhancedCounter from '../../containers/EnhancedCounter'
 
 class App extends Component {
     state = {
@@ -76,6 +78,7 @@ class App extends Component {
                     <Content/>
                     <CommentList myCommentList={this.state.myCommentList}/>
                     <FormAddComment changeComment={this.changeComment}/>
+                    <EnhancedCounter/>
                 </Main>
                 <Footer/>
 

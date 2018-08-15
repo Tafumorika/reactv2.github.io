@@ -43,11 +43,11 @@ class FormAddComment extends Component {
                 <h3>Add a Comment</h3>
                 <form method="form-AddComment" onSubmit={this.submitForm}>
                     <label className="label-form" htmlFor="text">Comment:</label>
-                    <textarea className="textarea-form" value={text} onChange={this.addChange} id="text" name="text" required={false}/>
+                    <textarea className="textarea-form" value={text} onChange={this.addChange} id="text" name="text" required/>
                     <label className="label-form" htmlFor="name">Name:</label>
-                    <input className="input-form" type="text" value={name} onChange={this.addChange} id="name" name="name" required={false}/>
+                    <input className="input-form" type="text" value={name} onChange={this.addChange} id="name" name="name" required/>
                     <label className="label-form" htmlFor="date">Date:</label>
-                    <input className="input-form" type="date" value={date} onChange={this.addChange} id="date" name="date" required={false}/>
+                    <input className="input-form" type="date" value={date} onChange={this.addChange} id="date" name="date" required/>
                     <label className="label-form" htmlFor="img">Photo</label>
                      <select className="form-list" id="img" name="img" value={img} onChange={this.addChange} >
                          {Object.values(imgList).map(function (key) {
@@ -59,7 +59,7 @@ class FormAddComment extends Component {
                     <img alt="form-avatar" className="form-avatar" src={img}/>
 
                 <br/>
-                    <Button/>
+                    <Button>Add Comment</Button>
                 </form>
             </div>
         )

@@ -4,7 +4,7 @@ import './style.css';
 import {Link} from "../Link";
 
 
-// TODO классы переименовать
+
 const Comment = (props) =>{
     const {img, name, text, date} = props;
 

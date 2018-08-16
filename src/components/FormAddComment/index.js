@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './style.css';
 import {Button} from "../Button";
 import {imgList} from "../../constants/images";
+import PropsTypes from 'prop-types';
 
 function getInitialvelues () {
     return {
@@ -14,6 +15,9 @@ function getInitialvelues () {
     }
 }
 class FormAddComment extends Component {
+    static propTypes = {
+        addComment: PropsTypes.func,
+    };
     state = {
         myFormList: getInitialvelues()
 
@@ -22,7 +26,7 @@ class FormAddComment extends Component {
     submitForm = (event) => {
         event.preventDefault();
         console.log(this.state);
-        this.props.changeComment(this.state.myFormList);
+        this.props.addComment(this.state.myFormList);
         this.setState({myFormList: getInitialvelues()
         });
     };

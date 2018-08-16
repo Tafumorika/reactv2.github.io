@@ -3,17 +3,18 @@ import {connect} from 'react-redux';
 import {Counter} from "../components/Counter/index";
 import {decrement, increment} from "../actions/counter";
 
-const mapDispatchToProps = (dispatch) => {
-    return bindActionCreators({
-        increment,
-        decrement
-    }, dispatch);
-};
 
 const mapStateToProps = (state) => {
     return {
         count: state.counter.count
     }
+};
+
+const mapDispatchToProps = (dispatch) => {
+    return bindActionCreators({
+        increment,
+        decrement
+    }, dispatch);
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Counter);

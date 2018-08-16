@@ -8,16 +8,6 @@ const mapDispatchToProps = (dispatch) => {
         increment,
         decrement
     }, dispatch);
-
-    // return ({
-    //         increment() {
-    //             dispatch(increment());
-    //         },
-    //         decrement() {
-    //             dispatch({type: 'Decrement'})
-    //         }
-    //     }
-    // )
 };
 
 const mapStateToProps = (state) => {

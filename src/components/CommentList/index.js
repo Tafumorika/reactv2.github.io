@@ -10,7 +10,7 @@ import {Comment} from '../Comment';
 class CommentList extends React.Component {
     render() {
 
-        const commentsList = this.props.myCommentList.map(function (item, index) {
+        const commentsList = Object.values(this.props.myCommentList).map(function (item, index) {
             return (
                 <div key={item.id} className={'comment-level-' + item.level}>
                     {index === 0 ? '' : <hr/>}
@@ -28,7 +28,7 @@ class CommentList extends React.Component {
 }
 
 CommentList.propTypes ={
-    myCommentList: PropTypes.arrayOf(PropTypes.shape({
+    myCommentList: PropTypes.objectOf(PropTypes.shape({
         img: PropTypes.string,
         name: PropTypes.string,
         text: PropTypes.string

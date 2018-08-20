@@ -6,7 +6,6 @@ import PropsTypes from 'prop-types';
 
 function getInitialvelues () {
     return {
-        id: '',
         level:'',
         img:  imgList.comment1,
         name: '',

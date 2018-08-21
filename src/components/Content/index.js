@@ -74,7 +74,6 @@ const Content = () => {
             </li>
         </ol>
         <p className="content-tags-link">Tags: <Link href="#link4">featured</Link>, <Link href="#link5">Tag 2</Link></p>
-        <h3>5 Comments</h3>
         </div>
     )
 }

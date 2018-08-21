@@ -9,12 +9,7 @@ import {Footer} from '../Footer';
 import EnhancedCounter from '../../containers/EnhancedCounter';
 import EnhancedComment from '../../containers/EnhancedComment';
 import EnhancedForm from '../../containers/EnhancedForm';
-
-
 class App extends Component {
-
-
-
     render() {
         return (
             <div className="App">
@@ -33,5 +28,4 @@ class App extends Component {
         );
     }
 }
-
 export default App;

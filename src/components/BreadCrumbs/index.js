@@ -9,5 +9,6 @@ const BreadCrumbs = () => {
             <p className="bread-crumbs"><Link href="#link1">Home</Link>»<Link href="#link2">featured</Link>» A Post with Everything in it</p>
         </div>
     )
-}
+};
+
 export {BreadCrumbs}

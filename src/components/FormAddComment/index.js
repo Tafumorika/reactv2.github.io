@@ -6,16 +6,18 @@ import PropsTypes from 'prop-types';
 
 function getInitialvelues () {
     return {
-        level:'',
+        level: 1,
         img:  imgList.comment1,
         name: '',
         text: '',
-        date: ''
+        date: '',
+        children: []
     }
 }
 class FormAddComment extends Component {
     static propTypes = {
         addComment: PropsTypes.func,
+        replyId: PropsTypes.string
     };
     state = {
         myFormList: getInitialvelues()
@@ -44,6 +46,7 @@ class FormAddComment extends Component {
             <div className="form-div">
                 <br/>
                 <h3>Add a Comment</h3>
+                <p>{this.props.replyId}</p>
                 <form method="form-AddComment" onSubmit={this.submitForm}>
                     <label className="label-form" htmlFor="text">Comment:</label>
                     <textarea className="textarea-form" value={text} onChange={this.addChange} id="text" name="text" required/>
@@ -59,8 +62,8 @@ class FormAddComment extends Component {
                          )}
                      </select>
                     <br/>
-                    <img alt="form-avatar" className="form-avatar" src={img}/>
 
+                    <img alt="form-avatar" className="form-avatar" src={img}/>
                 <br/>
                     <Button>Add Comment</Button>
                 </form>

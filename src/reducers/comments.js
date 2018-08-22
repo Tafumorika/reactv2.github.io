@@ -59,11 +59,29 @@ const comments = (state = intialState, action) => {
     switch (action.type) {
         case ADDCOMMENT:
             const id = uuid();
+            const parent = state.myCommentList[action.parentId];
             const idData = {
                 ...action.data,
                 id,
+                level: parent ? parent.level + 1 : 1,
                 children: []
             };
+
+            if (parent) {
+
+                return {
+                    ...state,
+                    myCommentList: {
+                        ...state.myCommentList,
+                        [id]: idData,
+                        [action.parentId]: {
+                            ...parent,
+                            children: [...parent.children, id]
+                        }
+                    }
+                };
+            }
+
             return {
                 ...state,
                 myCommentList: {
@@ -71,6 +89,7 @@ const comments = (state = intialState, action) => {
                     [id]: idData
                 }
             };
+
         case ADDREPLYID:
 
             return {

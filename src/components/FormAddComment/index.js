@@ -3,6 +3,7 @@ import './style.css';
 import {Button} from "../Button";
 import {imgList} from "../../constants/images";
 import PropsTypes from 'prop-types';
+import {addReplyId} from "../../actions/comments";
 
 function getInitialvelues () {
     return {
@@ -28,9 +29,10 @@ class FormAddComment extends Component {
     submitForm = (event) => {
         event.preventDefault();
         console.log(this.state);
-        this.props.addComment(this.state.myFormList);
+        this.props.addComment(this.state.myFormList, this.props.replyId);
         this.setState({myFormList: getInitialvelues()
         });
+        this.props.addReplyId(null);
     };
 
 

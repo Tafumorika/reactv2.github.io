@@ -53,7 +53,6 @@ class FormAddComment extends Component {
             <div className="form-div">
                 <br/>
                 <h3>Add a Comment</h3>
-                <p>{this.props.replyId}</p>
                 <form method="form-AddComment" onSubmit={this.submitForm}>
                     <label className="label-form" htmlFor="text">Comment:</label>
                     <textarea className="textarea-form" value={text} onChange={this.addChange} id="text" name="text" required/>
@@ -74,8 +73,9 @@ class FormAddComment extends Component {
                 <br/>
                     <Button type='submit'>Add Comment</Button>
                     <br/>
-                    <Button type='button' onClick={this.cancelReply}>Cancel Reply</Button>
-
+                    {(this.props.replyId === null) ? null :
+                        (<Button type='button' onClick={this.cancelReply}>Cancel Reply</Button>)
+                    }
                 </form>
             </div>
         )

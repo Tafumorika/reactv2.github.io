@@ -7,13 +7,13 @@ import {Link} from "../Link";
 class Comment extends Component {
 
     addReplyId = () => {
-        console.log(this.props.addReplyId)
+        console.log(this.props.addReplyId);
         this.props.addReplyId(this.props.id)
        ;
     };
 
     render () {
-        const {img, name, text, date} = this.props
+        const {img, name, text, date} = this.props;
         console.log(this.props);
 
         return (<div  className="comment">

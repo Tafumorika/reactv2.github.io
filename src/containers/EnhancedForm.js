@@ -1,7 +1,7 @@
 import {connect} from 'react-redux';
 import { bindActionCreators } from 'redux'
 import {FormAddComment} from "../components/FormAddComment/index";
-import {addComment} from "../actions/comments";
+import {addComment, addReplyId} from "../actions/comments";
 
 const mapReplyId = (state) => {
     return {
@@ -12,6 +12,7 @@ const mapReplyId = (state) => {
 const mapDispatchToProps = (dispatch) => {
     return bindActionCreators({
         addComment,
+        addReplyId,
     }, dispatch);
 };
 

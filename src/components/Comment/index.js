@@ -14,7 +14,7 @@ class Comment extends Component {
 
     render () {
         const {img, name, text, date} = this.props
-        console.log(this.props);;
+        console.log(this.props);
 
         return (<div  className="comment">
                 <img alt="avatar" src={img} className="comment-avatar"/>

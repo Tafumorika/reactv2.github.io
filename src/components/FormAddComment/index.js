@@ -17,7 +17,8 @@ function getInitialvelues () {
 class FormAddComment extends Component {
     static propTypes = {
         addComment: PropsTypes.func,
-        replyId: PropsTypes.string
+        replyId: PropsTypes.string,
+        addReplyId: PropsTypes.func
     };
     state = {
         myFormList: getInitialvelues()
@@ -37,6 +38,12 @@ class FormAddComment extends Component {
         console.log(event.target.name, event.target.value);
         this.setState({myFormList: {...this.state.myFormList, [event.target.name]: event.target.value}})
     };
+    cancelReply =() => {
+        console.log(this.props.addReplyId);
+        this.props.addReplyId(null);
+
+    };
+
 
     render() {
 
@@ -65,7 +72,10 @@ class FormAddComment extends Component {
 
                     <img alt="form-avatar" className="form-avatar" src={img}/>
                 <br/>
-                    <Button>Add Comment</Button>
+                    <Button type='submit'>Add Comment</Button>
+                    <br/>
+                    <Button type='button' onClick={this.cancelReply}>Cancel Reply</Button>
+
                 </form>
             </div>
         )

@@ -3,7 +3,24 @@ import PropTypes from 'prop-types';
 import './style.css';
 import {Comment} from '../Comment';
 
+
 class CommentList extends React.Component {
+    componentDidMount() {
+        console.log('im here!', this.props);
+
+        fetch('/commentList.json')
+            .then ((response)=> {
+
+                return response.json();
+            })
+            .then ((commentList) => {
+            console.log(commentList)
+                }
+
+            )
+    }
+
+
     render() {
         const {myCommentList, addReplyId} = this.props;
         const commentsList = Object.keys(myCommentList)

@@ -3,29 +3,13 @@ import PropTypes from 'prop-types';
 import './style.css';
 import {Comment} from '../Comment';
 import {Loading} from '../Loading';
-import {wait} from '../../helpers/functions';
 
 
 class CommentList extends React.Component {
 
     componentDidMount() {
         console.log('im here!', this.props);
-        this.props.commentListRequestStart();
-        fetch('/commentList.json')
-            .then((response) => {
-                return response.json();
-            })
-            .then((data) => {
-                return wait(2000).then(() => data);
-            })
-            .then((commentList) => {
-                console.log(commentList);
-                this.props.commentListRequestSuccess(commentList)
-            })
-            .catch( function (error) {
-                console.log("Error" + error.message);
-                this.props.commentListRequestFailed();
-            })
+        this.props.loadCommentList();
     }
 
 

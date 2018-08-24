@@ -3,12 +3,7 @@ import PropTypes from 'prop-types';
 import './style.css';
 import {Comment} from '../Comment';
 import {Loading} from '../Loading';
-
-function wait(time) {
-    return new Promise((resolve, reject) => {
-        setTimeout(resolve, time);
-    });
-}
+import {wait} from '../../helpers/functions';
 
 
 class CommentList extends React.Component {

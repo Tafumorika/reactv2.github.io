@@ -12,13 +12,13 @@ export function addComment(data, parentId) {
 export function addReplyId(replyId) {
     return {type: ADD_REPLYID, replyId};
 }
-export function commentListRequest() {
+export function commentListRequestStart() {
     return {type: COMMENT_LIST_REQUEST_START};
 }
-export function requestSuccess(payload) {
+export function commentListRequestSuccess(payload) {
     return {type: REQUEST_SUCCESS, payload};
 }
 
-export function requestFailed(error) {
+export function commentListRequestFailed(error) {
     return {type: REQUEST_FAILED, error};
 }

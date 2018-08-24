@@ -1,17 +1,21 @@
 import { bindActionCreators } from 'redux';
 import {connect} from 'react-redux';
 import {CommentList} from "../components/CommentList/index";
-import {addReplyId} from "../actions/comments";
+import {addReplyId, commentListRequestStart, commentListRequestSuccess, commentListRequestFailed} from "../actions/comments";
 
 
 const mapStateToProps = (state) => {
     return {
-        myCommentList: state.comments.myCommentList
+        myCommentList: state.comments.myCommentList,
+        fetching: state.comments.fetching
     }
 };
 const  mapDispatchToProps = (dispatch)=>{
     return bindActionCreators({
-        addReplyId
+        addReplyId,
+        commentListRequestStart,
+        commentListRequestSuccess,
+        commentListRequestFailed
 }, dispatch);
 };
 

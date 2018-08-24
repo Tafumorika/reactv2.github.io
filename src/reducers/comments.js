@@ -52,7 +52,8 @@ const comments = (state = intialState, action) => {
                 replyId: action.replyId
             };
         case COMMENT_LIST_REQUEST_START:
-            return {...state,
+            return {
+                ...state,
                 fetching:true,
                 error: ''
             };
@@ -64,8 +65,11 @@ const comments = (state = intialState, action) => {
                 error: ''
             };
         case REQUEST_FAILED:
-            return {...state,
-                error: action.error};
+            return {
+                ...state,
+                error: action.error,
+                fetching: false
+            };
 
         default:
             return state;

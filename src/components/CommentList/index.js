@@ -2,27 +2,45 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './style.css';
 import {Comment} from '../Comment';
+import {Loading} from '../Loading';
+
+function wait(time) {
+    return new Promise((resolve, reject) => {
+        setTimeout(resolve, time);
+    });
+}
 
 
 class CommentList extends React.Component {
+
     componentDidMount() {
         console.log('im here!', this.props);
-
+        this.props.commentListRequestStart();
         fetch('/commentList.json')
-            .then ((response)=> {
-
+            .then((response) => {
                 return response.json();
             })
-            .then ((commentList) => {
-            console.log(commentList)
-                }
-
-            )
+            .then((data) => {
+                return wait(2000).then(() => data);
+            })
+            .then((commentList) => {
+                console.log(commentList);
+                this.props.commentListRequestSuccess(commentList)
+            })
+            .catch( function (error) {
+                console.log("Error" + error.message);
+                this.props.commentListRequestFailed();
+            })
     }
 
 
     render() {
         const {myCommentList, addReplyId} = this.props;
+        if (this.props.fetching === true)
+        {
+            // return ('Loading...')
+            return (<Loading/>)
+        }
         const commentsList = Object.keys(myCommentList)
             .filter((key) => {
                 const item = myCommentList[key];
@@ -56,7 +74,8 @@ class CommentList extends React.Component {
                     return (
                         <div key={item.id} className={'comment-level-' + item.level}>
                             {index === 0 ? '' : <hr/>}
-                            <Comment addReplyId={addReplyId} id={item.id} img={item.img} name={item.name} text={item.text} date={item.date}/>
+                            <Comment addReplyId={addReplyId} id={item.id} img={item.img} name={item.name}
+                                     text={item.text} date={item.date}/>
                         </div>
                     )
                 })}
@@ -73,7 +92,10 @@ CommentList.propTypes = {
         name: PropTypes.string,
         text: PropTypes.string
     })),
-    addReplyId: PropTypes.func
+    addReplyId: PropTypes.func,
+    commentListRequestStart:  PropTypes.func,
+    commentListRequestSuccess:  PropTypes.func,
+    commentListRequestFailed:  PropTypes.func
 };
 
 

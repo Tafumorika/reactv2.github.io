@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.css';
-import {Link} from "../Link";
+import {Link} from "../Link/index";
 
 // TODO ссылки принимать из props
 const BreadCrumbs = () => {

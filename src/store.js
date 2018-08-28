@@ -11,4 +11,4 @@ const store =  createStore(
     reducers,
     compose(middleware, window.devToolsExtension ? window.devToolsExtension(): f => f)
 );
-export default store
+export default store;

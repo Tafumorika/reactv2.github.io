@@ -1,0 +1,28 @@
+{
+  "1": {
+    "id": "1",
+    "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    "img": "/img/contentNews1.png",
+    "text": ""
+  },
+  "2": {
+    "id": "2",
+    "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at",
+    "img": "/img/contentNews2.png",
+    "text": ""
+  },
+  "3": {
+    "id": "3",
+    "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    "img": "/img/contentNews1.png",
+    "text": ""
+  },
+
+  "4": {
+    "id": "4",
+    "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at",
+    "img": "/img/contentNews2.png",
+    "text": ""
+  }
+
+}

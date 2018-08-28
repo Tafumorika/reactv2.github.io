@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import './style.css';
 
 
-const Main = (props) => {
+const XBox = (props) => {
     return (
         <div className="main-content">
             <main>
@@ -13,8 +13,8 @@ const Main = (props) => {
     )
 };
 
-Main.propTypes ={
+XBox.propTypes ={
     children: PropTypes.node
 };
 
-export {Main}
+export {XBox}

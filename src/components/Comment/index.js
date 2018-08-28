@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import './style.css';
-import {Link} from "../Link";
+import {Link} from "../Link/index";
 
 
 class Comment extends Component {

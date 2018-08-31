@@ -2,7 +2,7 @@ import { bindActionCreators } from 'redux';
 import {connect} from 'react-redux';
 import {NewsBlockList} from "../components/NewsBlockList/index";
 import {loadNewsBlockList} from "../actions/newsBlock";
-
+import {withRouter} from 'react-router'
 
 
 const mapStateToProps = (state) => {
@@ -17,4 +17,4 @@ const  mapDispatchToProps = (dispatch)=>{
     }, dispatch);
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(NewsBlockList);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(NewsBlockList));

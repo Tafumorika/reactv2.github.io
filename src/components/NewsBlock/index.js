@@ -4,7 +4,8 @@ import './style.css';
 import {XBox} from "../XBox/index";
 import {IconList} from "../IconList/index";
 import {BoxRed} from "../Box-red/index";
-import {ButtonNews} from "../ButtonNews/index";
+import {LinkNews} from "../LinkNews/index";
+import {ClearFloat} from "../ClearFloat/index";
 
 
 class NewsBlock extends Component {
@@ -19,8 +20,9 @@ class NewsBlock extends Component {
                 <h1>{caption}</h1>
                 <IconList/>
                 <img alt="imageContentNews" src={img} className="news-block-avatar"/>
-                <p className="comment-style text-comment">{text}</p>
-                    <ButtonNews/>
+                <p className="text-news-block">{text}</p>
+                    <LinkNews/>
+                    <ClearFloat/>
                 </XBox>
             </div>
         );

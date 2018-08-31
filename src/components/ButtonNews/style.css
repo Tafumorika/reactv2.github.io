@@ -1,0 +1,21 @@
+.button-news{
+    width: 174px;
+    margin: 46px auto 20px 5px;
+    padding: 5px;
+    color: gray;
+    background-color: white;
+    border: none;
+    font-size: 16px;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-decoration: none;
+}
+.button-news.active,
+.button-news:active,
+.button-news:focus,
+.button-news:hover {
+    color: lightgray;
+    background-color: crimson;
+    outline: 0;
+    outline-offset: 0;
+}

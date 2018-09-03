@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 
 
 const ButtonNews = (props) => {
-    const {link, active} = props;
+    const {link, to, active} = props;
     let className = 'button-news';
 
     if (active) {
@@ -13,11 +13,11 @@ const ButtonNews = (props) => {
     }
 
     return (
-        <Link className={className} to={'/news?page=' + link}>{props.children}</Link>
+        <Link className={className} to={to + link}>{props.children}</Link>
     )
 };
 ButtonNews.propTypes = {
-    children: PropTypes.string,
+    children: PropTypes.node,
     type: PropTypes.string,
     active: PropTypes.bool
 };

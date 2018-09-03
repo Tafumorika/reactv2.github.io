@@ -3,8 +3,8 @@ import './style.css';
 import PropTypes from 'prop-types';
 import {Loading} from '../Loading';
 import {NewsBlock} from "../NewsBlock/index";
-import {ButtonNews} from "../ButtonNews/index";
 import queryString from 'query-string';
+import {Pagination} from "../Pagination/index";
 
 class NewsBlockList extends React.Component {
 
@@ -37,17 +37,8 @@ class NewsBlockList extends React.Component {
                     )
                 })}
                 <Pagination
-                    to="/news"
+                    to="/news?page=" numberPages={5} page={page}
                 />
-                <div className="button-news-list">
-                    <ButtonNews link={page-1}>{'<'}</ButtonNews>
-                    <ButtonNews active={page === 1} link="1">1</ButtonNews>
-                    <ButtonNews active={page === 2} link="2">2</ButtonNews>
-                    <ButtonNews active={page === 3} link="3">3</ButtonNews>
-                    <ButtonNews active={page === 4} link="4">4</ButtonNews>
-                    <ButtonNews active={page === 5} link="5">5</ButtonNews>
-                    <ButtonNews link={page + 1}>{'>'}</ButtonNews>
-                </div>
 
             </nav>
         )
@@ -62,6 +53,7 @@ NewsBlockList.propTypes = {
         img: PropTypes.string,
         name: PropTypes.string,
         text: PropTypes.string
+
     })),
     loadNewsBlockList: PropTypes.func,
 };

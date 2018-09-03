@@ -8,8 +8,13 @@ import {Pagination} from "../Pagination/index";
 
 class NewsBlockList extends React.Component {
 
+
     componentDidMount() {
-        this.props.loadNewsBlockList();
+        console.log('cdm');
+        const {location} = this.props;
+        const query = queryString.parse(location.search);
+        const page = query.page ? Number(query.page) : 1;
+        this.props.loadNewsBlockList(page);
     }
 
     render() {

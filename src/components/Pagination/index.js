@@ -10,7 +10,7 @@ class Pagination extends Component {
         const {page, numberPages, to} = this.props;
         let pageDecrement = page - 1;
         let pageIncrement = page + 1;
-        const myPagination = Array.from({length: 5}, (v , k) => k+1);
+        const myPagination = Array.from({length: numberPages}, (v , k) => k+1);
 
         // 5 => .... => [1,2,3,4,5]
         return (

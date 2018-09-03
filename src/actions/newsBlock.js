@@ -16,10 +16,10 @@ export function newsBockListRequestFailed(error) {
     return {type: NEWS_BLOCK_REQUEST_FAILED, error};
 }
 
-export function loadNewsBlockList() {
+export function loadNewsBlockList(page) {
     return (dispatch) => {
         dispatch(newsBockListRequestStart());
-        fetch('/newsBlockList.json')
+        fetch('/newsBlockList' + page + '.json')
             .then((response) => {
                 return response.json()
             })

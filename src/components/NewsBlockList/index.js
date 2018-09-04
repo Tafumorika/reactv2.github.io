@@ -17,12 +17,22 @@ class NewsBlockList extends React.Component {
         this.props.loadNewsBlockList(page);
     }
 
+    componentDidUpdate(prevProps) {
+        const {location} = this.props;
+
+        if (prevProps.location.search !== location.search) {
+            const query = queryString.parse(location.search);
+            const page = query.page ? Number(query.page) : 1;
+
+            this.props.loadNewsBlockList(page);
+        }
+    }
+
     render() {
         const {myNewsBlockList, fetching, location} = this.props;
         const query = queryString.parse(location.search);
         const page = query.page ? Number(query.page) : 1;
 
-        console.log('page', Number(query.page));
 
         if (fetching === true) {
             return (<Loading/>)
@@ -32,7 +42,7 @@ class NewsBlockList extends React.Component {
             <nav className="newsBlockList">
                 {newBlockList.map((key, index) => {
                     const item = myNewsBlockList[key]
-                    console.log('!!!', newBlockList);
+
                     return (
                         <div key={item.id}>
 
